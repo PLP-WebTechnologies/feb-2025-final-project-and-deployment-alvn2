@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ShopEasy</div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">☰</div>
+            <div class="header-icons">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </div>
+                <div class="cart">
+                    <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Fill out the form below.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

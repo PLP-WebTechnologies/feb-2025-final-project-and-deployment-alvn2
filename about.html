@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ShopEasy</div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">☰</div>
+            <div class="header-icons">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </div>
+                <div class="cart">
+                    <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Welcome to ShopEasy, your trusted online marketplace designed to bring the best shopping experience to Kenya and beyond. Founded with a passion for connecting buyers with quality products, we strive to offer an intuitive platform where convenience meets affordability.</p>
+            <p>Our mission is to empower local traders and consumers by providing a seamless shopping and selling environment. With a focus on innovative technology and customer satisfaction, we’ve built features like real-time inventory tracking and secure payment options to meet your needs.</p>
+            <p>Our team is dedicated to supporting the Kenyan economy, integrating local payment solutions like M-Pesa, and ensuring our platform reflects the diversity and vibrancy of our community. Join us on this journey to redefine online shopping!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

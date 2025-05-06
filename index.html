@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ShopEasy</div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">☰</div>
+            <div class="header-icons">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </div>
+                <div class="cart">
+                    <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to ShopEasy</h1>
+            <p>Discover amazing products at unbeatable prices!</p>
+        </section>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="featured-products">
+                <!-- Products loaded by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
